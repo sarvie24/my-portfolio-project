@@ -44,6 +44,19 @@
     margin: 40px 0;
  }
 
+ button.normal{
+   font-size: 14px;
+   font-weight: 600;
+   padding: 15px 30px;
+   color: #000;
+   background-color: #fff;
+   border-radius: 4px;
+   cursor: pointer;
+   border: none;
+   outline: none;
+   transition: 0.02s;
+ }
+
  body{
     width: 100%;
  }
@@ -124,9 +137,9 @@
  }
 
  #hero button{
-     background-image: url(img/button32.jpg);
+     background-image: url(img/button2.jpg);
      background-color: transparent;
-     color: brown;
+     color: black;
      border: 0;
      padding: 14px 80px 14px 65px;
      background-repeat: no-repeat;
@@ -291,4 +304,22 @@
 
   #banner h2 span{
    color: #ef3636;
+  }
+
+  #banner button:hover{
+   background-color: #ef3636;
+   color: #fff;
+  }
+
+  #sm-banner .banner-box{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   text-align: center;
+   align-items: center;
+   background-image: url(img/banner2.jpg);
+   min-width: 580px;
+   height: 50vh;
+   background-size: cover;
+   background-position: center;
   }

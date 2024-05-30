@@ -135,14 +135,14 @@
  
  /*home page*/
  #hero{
-    background-image: url("img/back.jpg");
+    background-image: url("img/nature3.jpg");
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 130vh;
     width: 100%;
-    /*background-size: cover;
-    background-position: center;*/
+    background-size: cover;
+    background-position: center;
     background-color: whitesmoke;
-    background-position: top 100% right 0;
+    /*background-position: top 100% right 0;*/
     padding: 0 80px;
     display: flex;
     flex-direction: column;
@@ -159,8 +159,8 @@
  }
 
  #hero button{
-     background-image: url(img/button2.jpg);
-     background-color: transparent;
+     /*background-image: url(img/button2.jpg);*/
+     background-color: burlywood;
      color: black;
      border: 0;
      padding: 14px 80px 14px 65px;
@@ -175,6 +175,7 @@
    align-items: center;
    justify-content: space-between;
    flex-wrap: wrap;
+   background-color: whitesmoke;
  }
 
  #feature .fe-box{
@@ -227,6 +228,7 @@
 
  #product1 {
    text-align: center;
+   background-color: whitesmoke;
  }
 
  #product1 .pro-container{
@@ -337,6 +339,7 @@
    display: flex;
    justify-content: space-between;
    flex-wrap: wrap;
+   background-color: whitesmoke;
   }
 
   #sm-banner .banner-box{
@@ -385,6 +388,7 @@
    justify-content: space-between;
    flex-wrap: wrap;
    padding: 0 80px;
+   background-color: whitesmoke;
   }
 
   #banner3 .banner-box{
@@ -537,6 +541,102 @@
    text-align: center;
   }
 
+  /*shop paga*/
+  #page-header{
+   background-image: url(img/sharp.jpg);
+   width: 100%;
+   height: 37vh;
+   background-size: cover;
+   display: flex;
+   justify-content: center;
+   text-align: center;
+   flex-direction: column;
+  }
+
+  #page-header h2,
+  #page-header p {
+   color: #fff;
+  }
+
+  #pagination{
+   text-align: center;
+  }
+
+  #pagination a {
+   text-decoration: none;
+   background-color: #09c9bc;
+   padding: 15px 20px;
+   border-radius: 4px;
+   font-weight: 600;
+   color: #fff;
+  }
+
+  #pagination a i {
+   font-weight: 600;
+   font-size: 16px;
+  }
+
+/*single product*/
+  #prodetails{
+   display: flex;
+   margin-top: 20px;
+  }
+
+  #prodetails .single-pro-image {
+   width: 30%;
+   margin-left: 50px;
+  }
+
+  .small-img-group {
+   display: flex;
+   justify-content: space-between;
+  }
+
+  .small-img-col {
+   flex-basis: 24%;
+   cursor: pointer;
+  }
+
+  #prodetails .single-pro-details {
+   width: 50%;
+   padding: 30px;
+  }
+
+  #prodetails .single-pro-details h4 {
+   padding: 40px 0 20px 0;
+  }
+
+  #prodetails .single-pro-details h2 {
+   font-size: 26px;
+  }
+
+  #prodetails .single-pro-details select {
+   display: block;
+   padding: 5px 10px;
+   margin-bottom: 10px;
+  }
+
+  #prodetails .single-pro-details input {
+   width: 50px;
+   height: 37px;
+   padding-left: 10px;
+   font-size: 20px;
+   margin-right: 10px;
+  }
+
+  #prodetails .single-pro-details input:focus {
+   outline: none;
+  }
+
+  #prodetails .single-pro-details button {
+   background-color: #088178;
+   color: #fff;
+  }
+
+  #prodetails .single-pro-details span {
+   line-height: 25px;
+  }
+
 
   /*start media query*/
   @media (max-width: 799px) {
@@ -593,9 +693,9 @@
    }
 
    #hero {
-    height: 70vh;
-    padding: 0 80px;
-    background-position: top 30% right 30px;
+    height: 55vh;
+    padding: 0 30px;
+    background-position: top 25% right 0;
    }
 
    #feature {
@@ -700,4 +800,26 @@
     font-size: 15px;
     margin-bottom: 10px;
    }
+
+   /*small product*/
+   #prodetails {
+    display: flex;
+    flex-direction: column;
+   }
+
+   #prodetails .single-pro-image {
+    width: 100%;
+    margin: 0px;
+   }
+
+   #prodetails .single-pro-details {
+      width: 100%;
+   }
+
+   #page-header {
+    width: 100%;
+    height: 20vh;
+   }
+
+
   }

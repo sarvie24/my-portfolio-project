@@ -17,9 +17,9 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="shop.html">shop</a></li>
                 <li><a href="blog.html">Blog</a></li>
-                <li><a class="active" href="about.html">About</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">contact</a></li>
-                <li id="lg-bag"><a href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+                <li id="lg-bag"><a class="active" href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
                 <a href="#" id="close"><i class="fas fa-times"></i></a>
             </ul>
         </div>
@@ -29,96 +29,70 @@
         </div>
     </section>
 
-    <section id="page-header" class="about-header">
+    <section id="page-header" class="contact-header">
 
-        <h2>About Us</h2>
+        <h2>#Let's Talk</h2>
 
-        <p>Results-driven individual with a commitment to excellence</p>
+        <p>Your opinion matters, we love to hear from you!</p>
 
     </section>
 
-    <section id="about-header" class="section-p1">
-        <img src="img/about-me.jpg" alt="">
-        <div>
-            <h2>Who I Am</h2>
-            <p>
-                I'm Samuel Nnah a passionate front-end software engineer dedicated to crafting 
-                <br> seamless and visually captivating user experiences.
-                <br> This e-commerce website is a proud portfolio project from ALX,
-                <br> where I honed my technical skills and took my expertise to new heights.
-                <br> The challenges and triumphs of this journey have significantly enriched my capabilities.
-                <br> I wholeheartedly encourage others to dive into the dynamic world of tech and choose <br> ALX 
-                for unparalleled training and career growth. <br> Embark on your own transformative journey with ALX,
-                <br> And unlock a future filled with innovation and endless possibilities.
-            </p>
-            <marquee bgcolor="#ccc" loop="-1" scrollamount="5" width="100%">
-                From creating a stunning website 
-                to brainstorming great tech ideas and anything 
-                you can thing about all possible with <strong>ALX</strong>
-            </marquee>
-        </div>
+    <section id="cart" class="section-p1">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>Remove</td>
+                    <td>Image</td>
+                    <td>Product</td>
+                    <td>Price</td>
+                    <td>Quantity</td>
+                    <td>Subtotal</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+                    <td><img src="img/product/vintage7.png" alt=""></td>
+                    <td>Cartoon T-Shirts</td>
+                    <td>₦7000</td>
+                    <td><input type="number" value="1"></td>
+                    <td>₦7000</td>
+                </tr>
+                 <tr>
+                    <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+                    <td><img src="img/product/vintage20.png" alt=""></td>
+                    <td>Cartoon T-Shirts</td>
+                    <td>₦7000</td>
+                    <td><input type="number" value="1"></td>
+                    <td>₦7000</td>
+                </tr>
+                 <tr>
+                    <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+                    <td><img src="img/product/vintage12.png" alt=""></td>
+                    <td>Designer T-Shirts</td>
+                    <td>₦7000</td>
+                    <td><input type="number" value="1"></td>
+                    <td>₦7000</td>
+                </tr>
+                 <tr>
+                    <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+                    <td><img src="img/product/vintage17.png" alt=""></td>
+                    <td>Designer T-Shirts</td>
+                    <td>₦7000</td>
+                    <td><input type="number" value="1"></td>
+                    <td>₦7000</td>
+                </tr>
+            </tbody>
+        </table>
     </section>
 
-    <section id="about-app" class="section-p1">
-        <h1> Download Our <a href="">App</a> </h1>
-        <div class="video">
-            <video autoplay muted loop src="img/download-app.mp4"></video>
-        </div>
-    </section>
-
-    <section id="feature" class="section-p1">
-        <div class="fe-box">
-            <img width="130px"
-            height="130px"
-            src="img/Free-shipping1.png" alt="">
-            <h6>Free shipping</h6>
-        </div>
-
-        <div class="fe-box">
-            <img width="130px"
-            height="130px"
-            src="img/happy-sell.png" alt="">
-            <h6>Happy Sales</h6>
-        </div>        
-        
-        <div class="fe-box">
-            <img width="130px"
-            height="130px"
-            src="img/order.png" alt="">
-            <h6>Order Online</h6>
-        </div>        
-        
-        <div class="fe-box">
-            <img width="130px"
-            height="130px"
-            src="img/piggy-bank.png" alt="">
-            <h6>Save Money</h6>
-        </div>        
-        
-        <div class="fe-box">
-            <img width="130px"
-            height="130px"
-            src="img/Promotions.png" alt="">
-            <h6>Promotions</h6>
-        </div>        
-        
-        <div class="fe-box">
-            <img width="130px"
-            height="130px"
-            src="img/24hrs-support.jpg" alt="">
-            <h6>24hrs Support</h6>
-        </div>
-    </section>
-
-    <section id="newsletter" class="section-p1 section-m1">
-        <div class="newstext">
-            <h4>Sign Up For Newsletters</h4>
-            <p>Get E-mail updates about our latest shop and <span>special offers</span></p>
-        </div>
-
-        <div class="form">
-            <input type="text" placeholder="your email address">
-            <button class="normal">Sign Up</button>
+    <section id="cart-add" class="section-p1">
+        <div id="Coupon">
+            <h3>Apply Coupon</h3>
+            <div>
+                <input type="text" placeholder="Enter your Coupon">
+                <button class="normal">Apply</button>
+            </div>
         </div>
     </section>
 
